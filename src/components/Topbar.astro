@@ -1,12 +1,13 @@
 ---
 import { Icon } from "astro-icon/components";
 import { FACEBOOK_URL, INSTAGRAM_URL, WHATSAPP_URL } from "astro:env/client";
+import AdisvLogo from "../assets/logo-adisv-nombre.png";
 ---
 
 <header class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
 	<div class="max-w-6xl mx-auto px-4 flex sm:flex-row flex-col items-center justify-between py-4 gap-y-2">
 		<div class="logo flex-shrink-0">
-			<img src="/src/assets/logo-adisv-nombre.png" alt="ADISV Logo" class="h-10 w-auto" />
+			<img src={AdisvLogo.src} alt="ADISV Logo" class="h-10 w-auto" />
 		</div>
 		<nav>
 			<ul class="flex list-none m-0 p-0 gap-4 md:gap-8 flex-col sm:flex-row">
