@@ -1,0 +1,34 @@
+---
+import AdisvLogo from "../../assets/logo-adisv-no-color.svg";
+import { faker } from "@faker-js/faker";
+import Carousel from "../Carousel";
+---
+
+<section class="w-full md:max-h-[600px] md:h-[600px] grid md:grid-cols-5">
+  <div
+    class="md:col-span-2 bg-primary-900 text-white flex flex-col items-center justify-center gap-y-4 md:h-full h-64 py-5"
+  >
+    <h3 class="text-base md:text-xl font-montserrat mb-5 -mt-5">Somos</h3>
+    <AdisvLogo class="w-1/2 max-w-96 h-auto text-white" />
+    <h1 class="text-base md:text-lg font-montserrat uppercase max-w-96 w-1/2 text-center">
+      Asociación de Desarrollo Integral de San Vicente
+    </h1>
+  </div>
+  <div class="md:col-span-3 bg-white flex items-center justify-center md:max-h-[inherit] md:h-full h-[50vh]">
+    <Carousel
+      client:load
+      className="w-full max-h-[600px] h-full"
+      autoSlide
+      autoSlideInterval={3000}
+      showIndicators
+      showArrows={false}
+      itemSources={[
+        faker.image.urlPicsumPhotos({ height: 600 }),
+        faker.image.urlPicsumPhotos({ height: 600 }),
+        faker.image.urlPicsumPhotos({ height: 600 }),
+        faker.image.urlPicsumPhotos({ height: 600 }),
+      ]}
+      imgClassName="object-contain"
+    />
+  </div>
+</section>

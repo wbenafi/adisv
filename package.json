@@ -9,6 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.12.0"
+    "@astrojs/preact": "^4.1.0",
+    "@fontsource-variable/montserrat": "^5.2.6",
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.12.0",
+    "astro-icon": "^1.1.5",
+    "preact": "^10.26.9",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@iconify-json/simple-icons": "^1.2.43"
   }
 }
